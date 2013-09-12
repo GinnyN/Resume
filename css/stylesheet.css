@@ -1,3 +1,23 @@
+*{
+	font-family: 'Ubuntu Mono', sans-serif;
+}
 .navbar-rainbow{
 	background-color: #8EAC00;
+	border-color: #8EAC00;
+	overflow: hidden;
+}
+.navbar-brand span{
+	font-family: 'Fredericka the Great', cursive;
+	color: #797D3B !important;
+	font-size: 2em;
+	display: inline-block;
+	position: absolute;
+	z-index: 1;
+}
+.navbar-brand small{
+	padding-left: 2em;
+	color: #ECEDDA;
+	font-size: 1.5em;
+	z-index: 2;
+	display: inline-block;
 }
