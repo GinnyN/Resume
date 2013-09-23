@@ -1,44 +1,497 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 		<title> Ximena Contreras - Web Developer </title>
 
 		<!-- Google Fonts -->
-		<link href='http://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
 
 		<!-- CSS -->
 		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/stylesheet.css">
 
 		<!-- Javascript -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+		<script src="js/script.js"></script>
 
 	</head>
 	<body>
-		<nav class="navbar navbar-rainbow navbar-default" role="navigation">
-		  <!-- Brand and toggle get grouped for better mobile display -->
-		  <div class="navbar-header">
-		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-		      <span class="sr-only">Toggle navigation</span>
-		      <span class="icon-bar"></span>
-		      <span class="icon-bar"></span>
-		      <span class="icon-bar"></span>
-		    </button>
-		    <a class="navbar-brand" href="#"><span> Ximena Contreras</span> <small>Web Developer</small></a>
-		  </div>
+		<div class="jumbotron magenta">
+			<h1>Ximena Contreras <small> Web Developer</small></h1>
+			<p class="flat 0"><em>Do you understand anything about Flat Design? Me neither. But I kind of like it</em></p>
+		</div>
+		<div class="row magenta">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h2>Who I am</h2>
+				<p>I'm the kind of Web Developer who likes to use different tools each project and try to push a bit everytime the envelope</p>
+				<p>I'm also the kind of Web Developer who gets angry at bad usability. I'll let you know</p>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+				<h3>Full Name:</h3>
+				<p>Ximena Lucía Contreras Collantes</p>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+				<h3>Birth Date:</h3>
+				<p>September 8th, 1984</p>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+				<h3>Headquarters:</h3>
+				<p>Santiago, Chile</p>
+			</div>
+		</div>
+		<div class="row yellow what-i-do">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h2>What I Know</h2>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<p>I code Web Pages in <em>HTML5</em> and <em>CSS3</em>, with a bit of <em>Javascript</em> (With some <em>JQuery</em> magic)</p>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<p>I can slide them from <em>Photoshop</em> or try to figure out what's going on from even more basic templates, like <em>Photos</em> or the <em>Wireframe from the meeting</em></p>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<p>I have also done Templates for <em>Joomla</em>, <em>Wordpress</em> and <em>Tumblr</em></p>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<p>I can design or advice about User Interface Usability <small>I just don't assure those are going to be pretty</small></p>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<p>I know how to use <em>Photoshop</em>, <em>Illustrator</em> and <em>inDesign</em></p>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<p>I have coded in <em>PHP</em> and <em>Python (Django)</em> as well </p>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<p>I have done a lot of other things too.</p>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<p><a data-toggle="modal" href="#myModal" class="btn btn-lg btn-block green">I have a complete list right here</a></p>
+			</div>
+		</div>
+		<div class="row cyan what-i-do">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h2>What I do with what I know <small>Also known as where I work now</small></h2>
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h3>Currently I work at <em>Bata LatAM</em> as <em>Web Developer</em></h3>
+				<p>I have done there:</p>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<h4>Bata Industrials LatAM 2013-2014</h4>
+				<div class="pages">
+					<div id="carousel-bi" class="carousel slide">
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators">
+					    <li data-target="#carousel-bi" data-slide-to="0" class="active"></li>
+					    <li data-target="#carousel-bi" data-slide-to="1"></li>
+					    <li data-target="#carousel-bi" data-slide-to="2"></li>
+					  </ol>
 
-		  <!-- Collect the nav links, forms, and other content for toggling -->
-		  <div class="collapse navbar-collapse navbar-ex1-collapse">
-		    <ul class="nav navbar-nav">
-		      <li class="active"><a href="#">Link</a></li>
-		      <li><a href="#">Link</a></li>
-		    </ul>
-		  </div><!-- /.navbar-collapse -->
-		</nav>
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner">
+					    <div class="item active">
+					      <img src="img/bi1.png">
+					    </div>
+					    <div class="item">
+					      <img src="img/bi2.png">
+					    </div>
+					    <div class="item">
+					      <img src="img/bi3.png">
+					    </div>
+					  </div>
+
+					  <!-- Controls -->
+					  <a class="left carousel-control" href="#carousel-bi" data-slide="prev">
+					    <span class="icon-prev"></span>
+					  </a>
+					  <a class="right carousel-control" href="#carousel-bi" data-slide="next">
+					    <span class="icon-next"></span>
+					  </a>
+					</div>
+				</div>
+				<div class="col-xs-12">
+					<ul class="list-unstyled">
+						<li>Joomla 2.5 Template</li>
+						<li>Templates for K2 and Virtuemart</li>
+						<li>Bootstrap 2.7, jQuery 1.10</li>
+						<li>HTML5, CSS3</li>
+						<li>Compatible with IE 8 with all functionality</li>
+					</ul>
+					<a href="http://www.bataindustrials.cl" target="_blank" class="btn btn-lg btn-block  green">You can visit this site!</a>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<h4>Portal Bata LatAM Presentation</h4>
+				<div class="pages">
+					<div id="carousel-slide" class="carousel slide">
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators">
+					    <li data-target="#carousel-slide" data-slide-to="0" class="active"></li>
+					    <li data-target="#carousel-slide" data-slide-to="1"></li>
+					  </ol>
+
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner">
+					    <div class="item active">
+					      <img src="img/slide1.png">
+					    </div>
+					    <div class="item">
+					      <img src="img/slide2.png">
+					    </div>
+					  </div>
+
+					  <!-- Controls -->
+					  <a class="left carousel-control" href="#carousel-slide" data-slide="prev">
+					    <span class="icon-prev"></span>
+					  </a>
+					  <a class="right carousel-control" href="#carousel-slide" data-slide="next">
+					    <span class="icon-next"></span>
+					  </a>
+					</div>
+				</div>
+				<div class="col-xs-12">
+					<ul class="list-unstyled">
+						<li>Wordpress Template Upgrade</li>
+						<li>Made for been presented on Screens in waiting rooms on loop</li>
+						<li>Implement Wonderground API for Weather</li>
+						<li>Read Wordpress Posts tagged as "slide" for content</li>
+						<li>Use Ajax for reload content every 2 hours</li>
+						<li>News Feed with birthdays coded by hand</li>
+						<li>Work best in lastest Chrome</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row cyan what-i-do">
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<p>I have also done:</p>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<p>Some work as Javascript and CSS consultant</p>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<p>Small tweaks in different existing sites</p>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<p>Learn how to do PDF using PHP (And also send them by E-Mail)</p>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<p>Investigate about new Technology</p>
+			</div>
+		</div>
+		<div class="row green">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h2>What I do with what I know (part 2) <small>Also known as where I worked before</small></h2>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<h3>Last Seal (2012 - 2013) - Valparaíso, Chile</h3>
+				<ul class="list-unstyled">
+					<li>Coding game "Sabotage Valentine" in Construct 2</li>
+					<li>Administration System for "Dark Rises" in Python-Django
+						<ul>
+							<li>Implementation with Cassandra</li>
+							<li>UI using Bootstrap 2.5</li>
+						</ul>
+					</li>
+					<li>Promotional Site for "Dark Rises" in Symfony 2
+						<ul>
+							<li>Implementation of Facebook API for the site</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<h3>Lawlogix (2011 - 2012) - Phoenix, Arizona, USA</h3>
+				<ul class="list-unstyled">
+					<li>Maintenance of Web Application "Edge"</li>
+					<li>Implementation of Grid System using "JQGrid"</li>
+					<li>Implementation of Calendar using "Full Calendar"
+						<ul>
+							<li>Implementation of Busy Hours (Which wasn't originally in the plugin)</li>
+							<li>Creation of Backend for feed the plugin with the correct JSON</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+			
+		<div class="row purple">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h2>Where I learned I bunch of stuff</h2>
+			</div>
+			<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+				<h3>I'm an Engineer in Execution of Computer Sciences</h3>
+				<p>Graduated from the Universidad Técnica Federico Santa María, Casa Central</p>
+				<p><small>Yep, I studied in a Castle!</small></p>
+			</div>
+			<figure class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Utfsm.jpg/276px-Utfsm.jpg" class="img-circle img-responsive"/>
+			</figure>
+			<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+				<h3>I also did a HTML5 and CSS3 Course by Mejorando.la in Chile</h3>
+				<p>Web Integration, HTML5 and CSS3 for Companies in Icare</p>
+			</div>
+		</div>
+		<div class="row magenta">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h2>Other things I like to do</h2>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<p>I do Comics and Cartoons</p>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<p>I love Video Games (and Cartoons and Anime)</p>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<p>I also Play AND Direct Pen and Paper RPG!</p>
+			</div>
+			<ul class="list-unstyled col-lg-3 col-md-12 col-sm-6 col-xs-12">
+				<li  class="btn btn-lg  btn-block  yellow">
+					<abbr title="Tumblr"><i class="icon-tumblr"></i>:</abbr>
+					<a href="https://ginnyn.tumblr.com" target="_blank">
+						Personal Blog
+					</a>
+				</li>
+				<li class="btn btn-lg btn-block  yellow">
+					<abbr title="Tumblr"><i class="icon-tumblr"></i>:</abbr>
+					<a href="http://ginnywebtutorial.tumblr.com/" target="_blank">
+						GinnyN's Web Tutorials and Rants
+					</a>
+				</li>
+				<li class="btn btn-lg btn-block  yellow">
+					<abbr title="Tumblr"><i class="icon-tumblr"></i>:</abbr>
+					<a href="http://ginnynart.tumblr.com/" target="_blank">
+						GinnyN's Art
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="row yellow">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h2>Do you want to contact me? THAT'S AWESOME!</h2>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<h3> Direct Ways </h3>
+				<ul class="list-unstyled">
+					<li>
+						<abbr title="Phone"><i class="icon-mobile-phone"></i>:</abbr>
+						+56 9 91294652
+					</li>
+					<li>
+						<abbr title="E-Mail">@:</abbr>
+						satelliteg [at] gmail [dot] com
+					</li>
+					<li>
+						<abbr title="Skype"><i class="icon-skype"></i>:</abbr>
+						ginny-n
+					</li>
+				</ul>
+			</div>
+		    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<h3> Social Media </h3>
+				<ul class="list-unstyled">
+					<li class="btn btn-lg green">
+						<abbr title="Linkedin"><i class="icon-linkedin"></i>:</abbr>
+						<a href="http://cl.linkedin.com/pub/ximena-contreras/19/40a/325/" target="_blank">
+							Profile
+						</a>
+					</li>
+					<li class="btn btn-lg green">
+						<abbr title="Github"><i class="icon-github"></i>:</abbr>
+						<a href="https://github.com/GinnyN" target="_blank">
+							Repositories
+						</a>
+					</li>
+					<li class="btn btn-lg green">
+						<abbr title="Twitter"><i class="icon-twitter"></i>:</abbr>
+						<a href="https://twitter.com/ginnyn" target="_blank">
+							@ginnyn
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row" style="padding: 0;">
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 cyan">
+				Color Pallette: Rainbow Connection by <a href="http://www.colourlovers.com/lover/Luna%20Rosa" target="_blank">Luna Rosa</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 green">
+				Raleway font provided by<br/> <a href="www.google.com/fonts" target="_blank">Google Fonts</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 magenta">
+				Icons by <br/><a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a>
+			</div>
+			<div class="col-lg-3 col-md-12 col-sm-6 col-xs-12 purple">
+				Done mostly for practice </br> <a href="http://www.getbootstrap.com" target="_blank">Bootstrap 3.0</a>
+			</div>
+		</div>
+		<div class="modal fade" id="myModal">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+			     <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			        <h3 class="modal-title">Complete List of Technologies I do know</h3>
+			        <p> Beware, it's kind of long!</p>
+			    </div>
+			    <div class="modal-body">
+			        <h4> Technologies I like to use </h4>
+					HTML <i class="icon-html5"></i>
+					<div class="progress progress-striped">
+						<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
+						</div>
+					</div>
+					CSS <i class="icon-css3"></i>
+					<div class="progress progress-striped">
+						<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
+						</div>
+					</div>
+					Javascript
+					<div class="progress progress-striped">
+						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+						</div>
+					</div>
+					PHP
+					<div class="progress progress-striped">
+						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 87%">
+						</div>
+					</div>
+					Python
+					<div class="progress progress-striped">
+						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+						</div>
+					</div>
+					<h4> Frameworks I usually use </h4>
+					<i class="icon-html5"></i> <i class="icon-css3"></i> Bootstrap 2.7 / 3.0
+					<div class="progress progress-striped">
+						<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+						</div>
+					</div>
+					jQuery
+					<div class="progress progress-striped">
+						<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
+						</div>
+					</div>
+					<i class="icon-html5"></i> <i class="icon-css3"></i> jQuery UI
+					<div class="progress progress-striped">
+						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 87%">
+						</div>
+					</div>
+					<i class="icon-html5"></i> <i class="icon-css3"></i> jQuery Mobile
+					<div class="progress progress-striped">
+						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 37%">
+						</div>
+					</div>
+					Django
+					<div class="progress progress-striped">
+						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+						</div>
+					</div>
+					<h4> CMS I was forced to Use </h4>
+					Joomla 2.5 with VirtueMart and K2 (Templating Only)
+					<div class="progress progress-striped">
+						<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 65%">
+						</div>
+					</div>
+					Wordpress (Templating Only)
+					<div class="progress progress-striped">
+						<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+						</div>
+					</div>
+					<h3> Programs I know how to Use </h3>
+					Adobe Photoshop
+					<div class="progress progress-striped">
+						<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+						</div>
+					</div>
+					Adobe InDesign
+					<div class="progress progress-striped">
+						<div class="progress-bar secondary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+						</div>
+					</div>
+					Adobe Illustrator
+					<div class="progress progress-striped">
+						<div class="progress-bar third" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+						</div>
+					</div>
+					Adobe Premiere
+					<div class="progress progress-striped">
+						<div class="progress-bar fourth" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 5%">
+						</div>
+					</div>
+					Microsoft Office Suite (Word, Powerpoint, Excel)
+					<div class="progress progress-striped">
+						<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+						</div>
+					</div>
+					Text Editors (Sublime Text 2, Notepad++, Text Wrangler)
+					<div class="progress progress-striped">
+						<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+						</div>
+					</div>
+					<a href="http://www.scirra.com" target="_blank">Construct 2</a>
+					<div class="progress progress-striped">
+						<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+						</div>
+					</div>
+					<h4> Other Useful Things </h4>
+					Version Control (SVN (Tortoise SVN), Git (Github, Bitbucket))
+					<div class="progress progress-striped">
+						<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+						</div>
+					</div>
+					SQL (MySQL, Postgres)
+					<div class="progress progress-striped">
+						<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+						</div>
+					</div>
+					Phonegap, Cordova
+					<div class="progress progress-striped">
+						<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+						</div>
+					</div>
+					Agile Development
+					<div class="progress progress-striped">
+						<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+						</div>
+					</div>
+					UML
+					<div class="progress progress-striped">
+						<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+						</div>
+					</div>
+					<h4> Things I have Barely a notion but I think I should name</h4>
+							<dl>
+								<dt>Ludei CooconJS</dt>
+								<dd>We have to compile "Sabotage Valentine" on this System</dd>
+								<dt>SEO</dt>
+								<dd>I can leave a page ready for start the process</dd>
+								<dt>Symfony 2</dt>
+								<dd>I have worked on this Framework once</dd>
+								<dt>NoSQL Databases</dt>
+								<dd>Some work done with Cassandra by connecting Python-Django to a Cassandra Database</dd>
+							</dl>
+							<h4> Things I learned for Educational Purposes</h4>
+							<dl>
+								<dt>Programming</dt>
+								<dd>Object Oriented, Procedural and Scripting</dd>
+								<dt>Java</dt>
+								<dd>I have shipped a Software in Java for a College Activity</dd>
+								<dt>Data Structures</dt>
+								<dd>Arrays, Trees, Queues, Basic Ordering</dd>
+								<dt>Data Base Modeling</dt>
+								<dd>Object Oriented for SQL Based Databases, starting from the UI</dd>
+								<dt>Physics and Math</dt>
+								<dd>I was kind of bad at it but those things teach you how to think</dd>
+							</dl>
+			     </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
 	</body>
 </html>

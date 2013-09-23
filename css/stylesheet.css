@@ -1,23 +1,89 @@
 *{
-	font-family: 'Ubuntu Mono', sans-serif;
+	font-size: 21px;;
 }
-.navbar-rainbow{
-	background-color: #8EAC00;
-	border-color: #8EAC00;
-	overflow: hidden;
+*, h1, h2, h3, h4{
+	font-family: 'Raleway', sans-serif;
 }
-.navbar-brand span{
-	font-family: 'Fredericka the Great', cursive;
-	color: #797D3B !important;
-	font-size: 2em;
-	display: inline-block;
-	position: absolute;
-	z-index: 1;
+h1, h2, h3, h4, em{
+	font-weight: 700;
 }
-.navbar-brand small{
-	padding-left: 2em;
-	color: #ECEDDA;
+h2{
 	font-size: 1.5em;
-	z-index: 2;
-	display: inline-block;
+}
+li{
+	margin-top: 0.5em;
+}
+div.row, div.col-xs-12{
+	padding:1em;
+}
+body.modal-open{
+	margin-right: 0;
+}
+.btn{
+	white-space: normal !important;
+}
+.center{
+	text-align: center;
+}
+.row{
+	padding: 1em;
+	margin-right: 0;
+	margin-left: 0;
+}
+.jumbotron{
+	margin-bottom: 0;
+}
+.jumbotron, .jumbotron small{
+	transition: all 1s;
+	-webkit-transition: all 1s; /* Safari */
+}
+.magenta, .modal-body .progress:nth-child(5n) .progress-bar{
+	background-color: rgb(191,12,67);
+	color: #cccccc;	
+}
+.magenta small, .cyan small, .purple small, .cyan a, .purple a, .magenta a{
+	color: #cccccc !important;	
+}
+.yellow small, .green small, .yellow a, .green a{
+	color: #333333 !important;
+}
+.cyan small, .cyan a{
+	color: #cccccc !important;	
+}
+.yellow, .modal-body .progress:nth-child(5n+1) .progress-bar{
+	background-color: rgb(249,186,21);
+	color: #333333;
+}
+.cyan, .modal-body  .progress:nth-child(5n+2) .progress-bar{
+	background-color: rgb(18,122,151);
+	color: #cccccc !important;
+}
+.green, .modal-body  .progress:nth-child(5n+3) .progress-bar{
+	background-color: rgb(142,172,0);
+	color: #333333 !important;
+}
+.purple, .modal-body  .progress:nth-child(5n+4) .progress-bar{
+	background-color: rgb(69,43,114);
+	color: #cccccc;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 992px) {
+	.what-i-do .col-sm-6:nth-child(2n+2){
+		clear: left;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px) { 
+	.what-i-do .col-md-4:nth-child(3n+2){
+		clear: left;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	.what-i-do .col-lg-3:nth-child(4n+2){
+		clear: left;
+	}
 }
